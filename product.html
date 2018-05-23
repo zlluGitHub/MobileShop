@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+    <title>商品详情</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/mui/css/mui.css"/>
+    <link rel="stylesheet" href="assets/fa/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
+</head>
+<body>
+<div class="lt_container">
+    <header class="lt_topBar">
+        <a class="btn_left" href="javascript:history.back();"><span class="mui-icon mui-icon-arrowleft"></span></a>
+        <a class="btn_right" href="javascript:;"><span class="mui-icon mui-icon-reload"></span></a>
+        <h3>商品详情</h3>
+    </header>
+    <div class="lt_content">
+        <div class="lt_wrapper">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                <!-- loading -->
+                    <div class="loading"><span class="mui-icon mui-icon-spinner"></span></div>
+                    <!-- 商品详情 -->
+    <div class="mui-slider">
+        <div id="scroll-img" class="mui-slider-group mui-slider-loop">
+            <!-- 轮换图片 -->
+        </div>
+        <div class="mui-slider-indicator">
+           <!-- 圆点 -->
+        </div>
+    </div>
+    <!--名称-->
+    <div class="lt_item">
+        <strong class="mui-ellipsis-2"></strong>
+    </div>
+    <!--价格-->
+    <div class="lt_item">
+        价格：
+        <span class="now"><!-- 现价 --></span> <del class="old"><!-- 原价 --></del>
+    </div>
+    <!--尺码-->
+    <div id="lt_size" class="lt_item">
+        尺码：
+            <span class="size"></span><span class="size"></span><span class="size"></span><span class="size"></span><span class="size"></span><span class="size"></span>
+    </div>
+    <!--数量-->
+    <div class="lt_item">
+        数量：
+        <div class="mui-numbox" data-numbox-min='1' data-numbox-max='50'>
+            <button class="mui-btn mui-btn-numbox-minus" type="">-</button>
+            <input class="mui-input-numbox" type="number" value="1">
+            <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+        </div>
+        <span class="num"></span>
+    </div>
+    <!--描述-->
+    <div class="lt_item">
+        <span id="details"></span>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lt_trade">
+        <a href="user/cart.html" class="mui-btn mui-btn-link">去购物车</a>
+        <div class="mui-pull-right">
+            <a href="javascript:;" class="mui-btn mui-btn-danger">加入购物车</a>
+            <a href="user/cart.html" href="javascript:;" class="mui-btn mui-btn-warning">立即购买</a>
+        </div>
+    </div>
+</div>
+
+<script src="assets/mui/js/mui.js"></script>
+<script src="assets/zepto/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
