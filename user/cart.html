@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+    <title>购物车</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../assets/mui/css/mui.css" />
+    <link rel="stylesheet" href="../assets/fa/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/user.css" />
+</head>
+
+<body>
+    <div class="lt_container">
+        <header class="lt_topBar">
+            <a class="btn_left" href="javascript:history.back();"><span class="mui-icon mui-icon-arrowleft"></span></a>
+            <h3>购物车</h3>
+        </header>
+        <div class="lt_content lt_content_cart">
+            <div class="lt_wrapper">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <!--todo-->
+                            <li class="mui-table-view-cell  mui-transitioning">
+                                <div class="mui-slider-right mui-disabled">
+                                    <a class="mui-btn mui-btn-blue mui-icon mui-icon-compose"></a>
+                                    <a class="mui-btn mui-btn-red mui-icon mui-icon-trash"></a>
+                                </div>
+                                <div class="mui-slider-handle">
+                                    <div class="mui-table-cell">
+                                        <div class="lt_proImg"><img src="../images/product.jpg" alt=""></div>
+                                        <div class="lt_proInfo">
+                                            <p class="name mui-ellipsis-2">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                            <p>
+                                                <span class="price">&yen;45</span>
+                                                <span class="oldPrice">&yen;23.32</span>
+                                                <span class="num">2双</span>
+                                            </p>
+                                            <p><span class="size">鞋码：42</span></p>
+                                            <input data-num="<%=data[i].num%>" data-price="<%=data[i].price%>" type="checkbox" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mui-table-view-cell  mui-transitioning">
+                                <div class="mui-slider-right mui-disabled">
+                                    <a class="mui-btn mui-btn-blue mui-icon mui-icon-compose"></a>
+                                    <a class="mui-btn mui-btn-red mui-icon mui-icon-trash"></a>
+                                </div>
+                                <div class="mui-slider-handle">
+                                    <div class="mui-table-cell">
+                                        <div class="lt_proImg"><img src="../images/product.jpg" alt=""></div>
+                                        <div class="lt_proInfo">
+                                            <p class="name mui-ellipsis-2">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                            <p>
+                                                <span class="price">&yen;45</span>
+                                                <span class="oldPrice">&yen;23.32</span>
+                                                <span class="num">2双</span>
+                                            </p>
+                                            <p><span class="size">鞋码：42</span></p>
+                                            <input data-num="<%=data[i].num%>" data-price="<%=data[i].price%>" type="checkbox" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mui-table-view-cell  mui-transitioning">
+                                <div class="mui-slider-right mui-disabled">
+                                    <a class="mui-btn mui-btn-blue mui-icon mui-icon-compose"></a>
+                                    <a class="mui-btn mui-btn-red mui-icon mui-icon-trash"></a>
+                                </div>
+                                <div class="mui-slider-handle">
+                                    <div class="mui-table-cell">
+                                        <div class="lt_proImg"><img src="../images/product.jpg" alt=""></div>
+                                        <div class="lt_proInfo">
+                                            <p class="name mui-ellipsis-2">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                            <p>
+                                                <span class="price">&yen;45</span>
+                                                <span class="oldPrice">&yen;23.32</span>
+                                                <span class="num">2双</span>
+                                            </p>
+                                            <p><span class="size">鞋码：42</span></p>
+                                            <input data-num="<%=data[i].num%>" data-price="<%=data[i].price%>" type="checkbox" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <div class="mui-table-cell">
+                                    <a class="mui-btn mui-btn-link" href="../search.html">购物车空的去添加。</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 订单底部 -->
+        <div class="lt_cart">
+            <div>订单总金额：&yen;<span>00.00</span></div>
+            <a href="#">生成订单</a>
+        </div>
+        <footer class="lt_tabBar">
+            <ul>
+                <li><a href="../index.html"><span class="fa fa-home"></span><p>首页</p></a></li>
+                <li><a href="../category.html"><span class="fa fa-bars"></span><p>分类</p></a></li>
+                <li class="now"><a href="cart.html"><span class="fa fa-shopping-cart"></span><p>购物车</p></a></li>
+                <li><a href="index.html"><span class="fa fa-user"></span><p>会员中心</p></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../assets/mui/js/mui.js"></script>
+    <script src="../assets/zepto/zepto.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/user/cart.js"></script>
+</body>
+
+</html>
