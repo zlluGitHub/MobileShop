@@ -102,3 +102,47 @@
     line-height: 36px;
     font-size: 12px;
 }
+.lt_item .size.now {
+    background: red;
+    color: #fff;
+}
+.cz_container {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.form_box {
+    padding: 10px;
+}
+[type="text"][name="code"] {
+    width: 60%;
+    float: left;
+}
+.mui-input-row .btn_getCode {
+    width: 35%;
+    float: left;
+    margin-left: 5%;
+    height: 40px;
+}
+.btn_updatePass {
+    width: 100%;
+    margin: 20px 0;
+}
+.btn_register{
+    width: 100%;
+    margin: 20px 0;
+}
+.cz_text {
+    font-size: 12px;
+     height: 20px;
+    line-height: 20px;
+}
+.cz_text a {
+    float: right;
+}
+.btn_submit{
+    width: 100%;
+    margin: 20px 0;
+}

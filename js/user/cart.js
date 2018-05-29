@@ -2,18 +2,33 @@ $(function() {
     // 提示框
     $('.mui-btn-blue').on('tap', function() {
         var btnArray = ['确定', '取消'];
-        var datas = '<div class="It_box"><div class="lt_item"><strong>尺码：</strong><span class="size">1</span><span class="size">12</span><span class="size">545</span><span class="size">45</span></div><div class="lt_item"><strong>数量：</strong><div class="mui-numbox" data-numbox-min="1" data-numbox-max="50"><button class="mui-btn mui-btn-numbox-minus" type="button">-</button><input class="mui-input-numbox" type="number" value="1"><button class="mui-btn mui-btn-numbox-plus" type="button">+</button></div><span class="num"></span></div></div>';
+        var datas = '<div class="It_box"><div class="lt_item Style"><strong>尺码：</strong><span class="size">1</span><span class="size">12</span><span class="size">545</span><span class="size">45</span></div><div class="lt_item"><strong>数量：</strong><div class="mui-numbox" data-numbox-min="1" data-numbox-max="50"><button class="mui-btn mui-btn-numbox-minus" type="button">-</button><input class="mui-input-numbox" type="number" value="1"><button class="mui-btn mui-btn-numbox-plus" type="button">+</button></div><span class="num"></span></div></div>';
         mui.confirm(datas, '商品编辑', btnArray, function(e) {
             if (e.index == 0) {
-                console.log("asdf");
+
+                var number = $('.mui-input-numbox').val();
+                $('.num').html(number+'双');
+                AllPrice();
+
+
             } else {
-                info.innerText = 'MUI没有得到你的认可，继续加油'
+
             }
         });
-            //改变商品数量
-            var number = $('.mui-input-numbox').val();
-            ChangeNumber(number);
+        //改变样式
+        $('.Style').on('tap','.size', function() {
+            var currSize = $(this);
+            $('.size').removeClass('now');
+            currSize.addClass('now');
+        });
+        //改变商品数量
+        var number = $('.mui-input-numbox').val();
+        ChangeNumber(number);
     });
+    //商品订单总额
+    AllPrice();
+
+    //商品尺寸数据渲染
     var data_list = '';
     getProductListData({
         mark: "product"
@@ -26,7 +41,12 @@ $(function() {
         $('.cart_size').append(data_list);
     });
 });
-
+//商品订单总额
+function AllPrice(){
+    var Price = $('.price').text().replace(/[^0-9]/ig,"");
+    var Num = $('.num').text().replace(/[^0-9]/ig,"");
+    $('.lt_cart').find('span').text(Price*Num);
+}
 /*获取后台数据 商品列表数据*/
 var getProductListData = function(prams, callback) {
     $.ajax({

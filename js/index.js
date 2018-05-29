@@ -23,8 +23,8 @@ mui.init({
 /**
  * 下拉刷新具体业务实现
  */
-    function pulldownRefresh() {
-     var that=this;
+function pulldownRefresh() {
+    var that = this;
     setTimeout(function() {
         that.endPulldownToRefresh();
     }, 1000);
@@ -33,7 +33,7 @@ mui.init({
  * 上拉加载具体业务实现
  */
 function pullupRefresh() {
-    var that=this;
+    var that = this;
     setTimeout(function() {
         // 停止上拉
         that.endPullupToRefresh(true);

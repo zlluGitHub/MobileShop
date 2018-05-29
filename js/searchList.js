@@ -51,7 +51,7 @@ $(function(){
 var getProductListData = function(prams,callback){
     $.ajax({
         type:'get',
-        url:'./PHP/searchList.php',
+        url:'./php/searchList.php',
         data:prams,
         dataType:'json',
         success:function(data){

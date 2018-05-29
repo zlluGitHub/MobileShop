@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+    <title>修改密码</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../assets/mui/css/mui.css" />
+    <link rel="stylesheet" href="../assets/fa/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/user.css" />
+</head>
+
+<body>
+    <div class="lt_container">
+        <header class="lt_topBar">
+            <a class="btn_left" href="javascript:history.back();"><span class="mui-icon  fa fa-arrow-left"></span></a>
+            <h3>修改密码</h3>
+        </header>
+        <div class="cz_container">
+            <div class="form_box">
+                <div class="mui-input-row">
+                    <input name="mobile" type="text" placeholder="手机号">
+                </div>
+                <div class="mui-input-row">
+                    <input name="pass" type="password" placeholder="密码" class="mui-input-password">
+                    <span class="mui-icon mui-icon-eye"></span>
+                </div>
+                <div class="mui-input-row">
+                    <input name="rePass" type="password" placeholder="确认密码" class="mui-input-password">
+                    <span class="mui-icon mui-icon-eye"></span>
+                </div>
+                <div class="mui-input-row">
+                    <input name="code" type="text" placeholder="认证码">
+                    <a href="javascript:;" class="btn_getCode mui-btn mui-btn-primary">获取认证码</a>
+                </div>
+                <a href="javascript:;" class="mui-btn mui-btn-primary btn_register">注册</a>
+                <div class="mui-input-row cz_text">
+                    <input type="checkbox" checked/> 我同意《会员服务协议》
+                    <a href="login.html">立即登录</a>
+                </div>
+            </div>
+        </div>
+        <footer class="lt_tabBar">
+            <ul>
+                <li><a href="../index.html"><span class="fa fa-home"></span><p>首页</p></a></li>
+                <li><a href="../category.html"><span class="fa fa-bars"></span><p>分类</p></a></li>
+                <li><a href="cart.html"><span class="fa fa-shopping-cart"></span><p>购物车</p></a></li>
+                <li class="now"><a href="index.html"><span class="fa fa-user"></span><p>会员中心</p></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../assets/mui/js/mui.min.js"></script>
+    <script src="../assets/zepto/zepto.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/user/password.js"></script>
+</body>
+
+</html>
