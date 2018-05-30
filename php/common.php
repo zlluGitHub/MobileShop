@@ -3,7 +3,7 @@
  * @Author: Marte
  * @Date:   2018-05-16 20:54:14
  * @Last Modified by:   Marte
- * @Last Modified time: 2018-05-17 13:01:24
+ * @Last Modified time: 2018-05-29 21:11:30
  */
     header ( "Content-type: text/html; charset=utf-8" ); //设置文件编码格式
     include_once("conn.php"); //连接数据库
@@ -29,7 +29,7 @@
             break;
 
         default:
-            # code...
+
             break;
         };
 
